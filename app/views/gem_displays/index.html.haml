@@ -1,0 +1,9 @@
+%h1 Listing gem_displays
+
+%table
+  %tr
+    %th Title
+
+  - @gem_displays.each do |gem_display|
+    %tr
+      %td= link_to gem_display.name, gem_display
