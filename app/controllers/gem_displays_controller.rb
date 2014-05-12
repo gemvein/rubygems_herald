@@ -16,7 +16,7 @@ class GemDisplaysController < RubygemsHeraldController
   # PATCH/PUT /gem_displays/1/refresh
   def refresh
     @gem_display = GemDisplay.find_by_name(params[:id])
-    if @gem_display.refresh
+    if @gem_display.update
       redirect_to @gem_display, notice: 'Gem display was successfully refreshed.'
     else
       redirect_to @gem_display, error: 'Gem display failed to refresh.'

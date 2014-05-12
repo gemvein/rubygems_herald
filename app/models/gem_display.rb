@@ -39,4 +39,8 @@ class GemDisplay < ActiveRecord::Base
     rubygem.each {|key, value| write_attribute(key, value.to_s) if self.respond_to?(key) }
     self
   end
+
+  def to_param
+    name
+  end
 end
