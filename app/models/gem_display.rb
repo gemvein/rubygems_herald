@@ -9,6 +9,7 @@ class GemDisplay < ActiveRecord::Base
     if expires_at > Time.now
       update
     end
+    expires_at
   end
 
   def update
@@ -21,7 +22,7 @@ class GemDisplay < ActiveRecord::Base
   end
 
   def rubygems_uri
-    spider.uri
+    spider.url
   end
 
   def spider
@@ -30,7 +31,7 @@ class GemDisplay < ActiveRecord::Base
 
   def self.load_rubygems
     for gem_name in RubygemsHerald.configuration.gems
-      create( { name: gem_name } )
+      find_or_create_by( { name: gem_name } )
     end
     all
   end

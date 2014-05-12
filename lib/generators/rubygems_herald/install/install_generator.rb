@@ -22,6 +22,11 @@ module RubygemsHerald
       end
     end
 
+    def add_gemfile
+      output "Also, we're adding a container for the gems you want to install.", :magenta
+      template "Gemfile", ".rubygems_herald/Gemfile"
+    end
+
     def self.next_migration_number(dirname)
       if ActiveRecord::Base.timestamped_migrations
         unless @prev_migration_nr

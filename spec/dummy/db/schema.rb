@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140511233739) do
+ActiveRecord::Schema.define(version: 20140512012318) do
 
   create_table "gem_displays", force: true do |t|
     t.string   "name"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20140511233739) do
     t.text     "readme"
     t.text     "license"
     t.datetime "expires_at"
+    t.datetime "released_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

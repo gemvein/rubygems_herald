@@ -21,6 +21,7 @@
 
 en:
   invalid_json_response: "Invalid JSON Response"
+  unable_to_load_gem: "Unable to Load Gem"
   version: "Version"
   downloads: "Downloads"
   for_this_version: "for this version"
@@ -38,3 +39,4 @@ en:
   license: "License"
   readme: "Readme"
   features: "Features"
+  released: "Release Date"

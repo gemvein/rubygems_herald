@@ -19,7 +19,15 @@ Gem::Specification.new do |s|
   s.files = [
     ".coveralls.yml",
     ".document",
+    ".idea/.rakeTasks",
+    ".idea/dataSources.ids",
+    ".idea/dataSources.xml",
+    ".idea/encodings.xml",
+    ".idea/misc.xml",
+    ".idea/modules.xml",
+    ".idea/rubygems_herald.iml",
     ".idea/scopes/scope_settings.xml",
+    ".idea/vcs.xml",
     ".rspec",
     ".travis.yml",
     "Gemfile",
@@ -29,8 +37,6 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "app/controllers/gem_displays_controller.rb",
-    "app/controllers/rubygems_herald_controller.rb",
-    "app/helpers/gem_displays_helper.rb",
     "app/models/gem_display.rb",
     "app/views/gem_displays/index.html.haml",
     "app/views/gem_displays/show.html.haml",
@@ -74,7 +80,6 @@ Gem::Specification.new do |s|
     "spec/dummy/config/initializers/wrap_parameters.rb",
     "spec/dummy/config/routes.rb",
     "spec/dummy/db/development.sqlite3",
-    "spec/dummy/db/migrate/20140511233739_create_gem_displays_table.rb",
     "spec/dummy/db/schema.rb",
     "spec/dummy/db/seeds.rb",
     "spec/dummy/lib/assets/.keep",
@@ -104,12 +109,12 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<jquery-rails>, [">= 0"])
       s.add_runtime_dependency(%q<haml-rails>, [">= 0"])
       s.add_runtime_dependency(%q<bootstrap_leather>, [">= 0"])
+      s.add_runtime_dependency(%q<factory_girl_rails>, [">= 0"])
+      s.add_runtime_dependency(%q<database_cleaner>, [">= 0"])
       s.add_runtime_dependency(%q<rubygems_herald>, [">= 0"])
       s.add_development_dependency(%q<sqlite3>, [">= 0"])
-      s.add_development_dependency(%q<sqlite3>, [">= 0"])
-      s.add_development_dependency(%q<sqlite3>, [">= 0"])
-      s.add_development_dependency(%q<sqlite3>, [">= 0"])
-      s.add_development_dependency(%q<rspec>, [">= 0"])
+      s.add_development_dependency(%q<rspec-rails>, [">= 0"])
+      s.add_development_dependency(%q<shoulda-matchers>, [">= 0"])
       s.add_development_dependency(%q<bundler>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, [">= 0"])
       s.add_development_dependency(%q<coveralls>, [">= 0"])
@@ -119,12 +124,12 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<jquery-rails>, [">= 0"])
       s.add_dependency(%q<haml-rails>, [">= 0"])
       s.add_dependency(%q<bootstrap_leather>, [">= 0"])
+      s.add_dependency(%q<factory_girl_rails>, [">= 0"])
+      s.add_dependency(%q<database_cleaner>, [">= 0"])
       s.add_dependency(%q<rubygems_herald>, [">= 0"])
       s.add_dependency(%q<sqlite3>, [">= 0"])
-      s.add_dependency(%q<sqlite3>, [">= 0"])
-      s.add_dependency(%q<sqlite3>, [">= 0"])
-      s.add_dependency(%q<sqlite3>, [">= 0"])
-      s.add_dependency(%q<rspec>, [">= 0"])
+      s.add_dependency(%q<rspec-rails>, [">= 0"])
+      s.add_dependency(%q<shoulda-matchers>, [">= 0"])
       s.add_dependency(%q<bundler>, [">= 0"])
       s.add_dependency(%q<jeweler>, [">= 0"])
       s.add_dependency(%q<coveralls>, [">= 0"])
@@ -135,12 +140,12 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<jquery-rails>, [">= 0"])
     s.add_dependency(%q<haml-rails>, [">= 0"])
     s.add_dependency(%q<bootstrap_leather>, [">= 0"])
+    s.add_dependency(%q<factory_girl_rails>, [">= 0"])
+    s.add_dependency(%q<database_cleaner>, [">= 0"])
     s.add_dependency(%q<rubygems_herald>, [">= 0"])
     s.add_dependency(%q<sqlite3>, [">= 0"])
-    s.add_dependency(%q<sqlite3>, [">= 0"])
-    s.add_dependency(%q<sqlite3>, [">= 0"])
-    s.add_dependency(%q<sqlite3>, [">= 0"])
-    s.add_dependency(%q<rspec>, [">= 0"])
+    s.add_dependency(%q<rspec-rails>, [">= 0"])
+    s.add_dependency(%q<shoulda-matchers>, [">= 0"])
     s.add_dependency(%q<bundler>, [">= 0"])
     s.add_dependency(%q<jeweler>, [">= 0"])
     s.add_dependency(%q<coveralls>, [">= 0"])

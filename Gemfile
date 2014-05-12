@@ -10,7 +10,7 @@ gem 'rails-i18n'
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'bootstrap_leather'
-
-gem 'sqlite3', group: [:test,:development]
+gem 'factory_girl_rails'
+gem 'database_cleaner'
 
 gemspec

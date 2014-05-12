@@ -7,19 +7,6 @@
 
 %p= @gem_display.info
 
-- add_tab :description.l, 'description' do
-  = @gem_display.description
-- if @gem_display.features.present?
-  - add_tab :features.l, 'features' do
-    = @gem_display.features
-- if @gem_display.readme.present?
-  - add_tab :readme.l, 'readme' do
-    = @gem_display.readme
-- if @gem_display.license.present?
-  - add_tab :license.l, 'license' do
-    = @gem_display.license
-= render_tabs 'left'
-
 %h3= :downloads.l
 .label.label-info
   = @gem_display.downloads

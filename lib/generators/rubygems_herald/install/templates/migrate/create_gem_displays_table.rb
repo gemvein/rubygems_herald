@@ -16,10 +16,6 @@ class CreateGemDisplaysTable < ActiveRecord::Migration
       t.string :mailing_list_uri
       t.string :source_code_uri
       t.string :bug_tracker_uri
-      t.text :description
-      t.text :features
-      t.text :readme
-      t.text :license
       t.datetime :expires_at
 
       t.timestamps
