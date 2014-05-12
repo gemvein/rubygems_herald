@@ -1,0 +1,36 @@
+!!!
+%html
+  %head
+    %link{:rel=>"shortcut icon", :href=>"/favicon.ico"}
+    %meta{"http-equiv"=>"Content-Type", :content=>"text/html;charset=utf-8"}
+    = render_title
+    = render_description
+    = render_keywords
+
+    = yield :opengraph_meta_tags
+
+    = responsive_meta_tag
+    = csrf_meta_tag
+
+    -if @meta
+      -@meta.each do |key|
+        %meta{:name=>key[0], :content=>key[1]}
+
+    - if @rss_title && @rss_url
+      = auto_discovery_link_tag(:rss, @rss_url, {:title => @rss_title})
+
+    = stylesheet_link_tag 'application'
+    = render_head_css
+
+  %body{:class => controller.controller_name}
+    .container
+      .col-md-9.column
+        = render_h1
+        #messages= alert_flash_messages
+        = yield
+      .col-md-3.column
+        = render_widgets
+
+    %footer
+      = javascript_include_tag 'application'
+      = render_footer_javascript

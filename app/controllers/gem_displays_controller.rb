@@ -1,4 +1,4 @@
-class GemDisplaysController < RubygemsHeraldController
+class GemDisplaysController < ApplicationController
 
   # GET /gem_displays
   def index

@@ -2,8 +2,9 @@ PATH
   remote: .
   specs:
     rubygems_herald (0.0.0)
-      friendly_id
+      bootstrap_leather
       haml-rails
+      jquery-rails
       rails (>= 4.1)
       rails-i18n
       rubygems_herald
@@ -39,6 +40,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
+    bootstrap_leather (0.1.6)
+      haml
+      rails
     builder (3.2.2)
     coveralls (0.7.0)
       multi_json (~> 1.3)
@@ -53,7 +57,6 @@ GEM
     erubis (2.7.0)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
-    friendly_id (4.0.9)
     git (1.2.6)
     github_api (0.11.3)
       addressable (~> 2.3)
@@ -83,6 +86,9 @@ GEM
       nokogiri (>= 1.5.10)
       rake
       rdoc
+    jquery-rails (3.1.0)
+      railties (>= 3.0, < 5.0)
+      thor (>= 0.14, < 2.0)
     json (1.8.1)
     jwt (0.1.13)
       multi_json (>= 1.5)
@@ -169,10 +175,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap_leather
   bundler
   coveralls
   haml-rails
   jeweler
+  jquery-rails
   rails (>= 4.1)
   rails-i18n
   rspec

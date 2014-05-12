@@ -7,7 +7,9 @@ source "http://rubygems.org"
 # Include everything needed to run rake, tests, features, etc.
 gem 'rails', '>= 4.1'
 gem 'rails-i18n'
+gem 'jquery-rails'
 gem 'haml-rails'
+gem 'bootstrap_leather'
 
 gem 'sqlite3', group: [:test,:development]
 

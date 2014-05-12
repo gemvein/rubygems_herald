@@ -1,55 +1,43 @@
-%p#notice= notice
-%p
-  %b Name:
-  = @gem_display.name
-%p
-  %b Info:
-  = @gem_display.info
-%p
-  %b Version:
-  = @gem_display.version
-%p
-  %b Downloads:
-  = @gem_display.downloads
-%p
-  %b Version downloads:
-  = @gem_display.version_downloads
-%p
-  %b Authors:
-  = @gem_display.authors
-%p
-  %b Project uri:
-  = @gem_display.project_uri
-%p
-  %b Gem uri:
-  = @gem_display.gem_uri
-%p
-  %b Homepage uri:
-  = @gem_display.homepage_uri
-%p
-  %b Wiki uri:
-  = @gem_display.wiki_uri
-%p
-  %b Documentation uri:
-  = @gem_display.documentation_uri
-%p
-  %b Mailing list uri:
-  = @gem_display.mailing_list_uri
-%p
-  %b Source code uri:
-  = @gem_display.source_code_uri
-%p
-  %b Bug tracker uri:
-  = @gem_display.bug_tracker_uri
-%p
-  %b Description:
+-add_title @gem_display.name
+%h2
+  = :by_authors.l authors: @gem_display.authors
+  .small
+    = :version.l
+    = @gem_display.version
+
+%p= @gem_display.info
+
+- add_tab :description.l, 'description' do
   = @gem_display.description
-%p
-  %b Features:
-  = @gem_display.features
-%p
-  %b Readme:
-  = @gem_display.readme
-%p
-  %b License:
-  = @gem_display.license
+- if @gem_display.features.present?
+  - add_tab :features.l, 'features' do
+    = @gem_display.features
+- if @gem_display.readme.present?
+  - add_tab :readme.l, 'readme' do
+    = @gem_display.readme
+- if @gem_display.license.present?
+  - add_tab :license.l, 'license' do
+    = @gem_display.license
+= render_tabs 'left'
+
+%h3= :downloads.l
+.label.label-info
+  = @gem_display.downloads
+  = '(' + @gem_display.version_downloads.to_s + ' ' + :for_this_version.l + ')'
+
+%h3= :links.l
+= nav_list class: 'nav-pills' do
+  - if @gem_display.project_uri.present?
+    = nav_item :project.l, @gem_display.project_uri
+  - if @gem_display.homepage_uri.present?
+    = nav_item :homepage.l, @gem_display.homepage_uri
+  - if @gem_display.wiki_uri.present?
+    = nav_item :wiki.l, @gem_display.wiki_uri
+  - if @gem_display.documentation_uri.present?
+    = nav_item :documentation.l, @gem_display.documentation_uri
+  - if @gem_display.mailing_list_uri.present?
+    = nav_item :mailing_list.l, @gem_display.mailing_list_uri
+  - if @gem_display.source_code_uri.present?
+    = nav_item :source_code.l, @gem_display.source_code_uri
+  - if @gem_display.bug_tracker_uri.present?
+    = nav_item :bug_tracker.l, @gem_display.bug_tracker_uri

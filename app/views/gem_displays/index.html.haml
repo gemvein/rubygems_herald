@@ -1,9 +1,5 @@
-%h1 Listing gem_displays
+-add_title :gem_displays.l
 
-%table
-  %tr
-    %th Title
-
+%ul
   - @gem_displays.each do |gem_display|
-    %tr
-      %td= link_to gem_display.name, gem_display
+    %li= link_to gem_display.name, gem_display
