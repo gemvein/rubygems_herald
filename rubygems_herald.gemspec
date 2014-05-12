@@ -19,15 +19,6 @@ Gem::Specification.new do |s|
   s.files = [
     ".coveralls.yml",
     ".document",
-    ".idea/.rakeTasks",
-    ".idea/dataSources.ids",
-    ".idea/dataSources.xml",
-    ".idea/encodings.xml",
-    ".idea/misc.xml",
-    ".idea/modules.xml",
-    ".idea/rubygems_herald.iml",
-    ".idea/scopes/scope_settings.xml",
-    ".idea/vcs.xml",
     ".rspec",
     ".travis.yml",
     "Gemfile",
@@ -80,19 +71,25 @@ Gem::Specification.new do |s|
     "spec/dummy/config/initializers/wrap_parameters.rb",
     "spec/dummy/config/routes.rb",
     "spec/dummy/db/development.sqlite3",
+    "spec/dummy/db/migrate/20140512012318_create_gem_displays_table.rb",
     "spec/dummy/db/schema.rb",
     "spec/dummy/db/seeds.rb",
+    "spec/dummy/db/test.sqlite3",
     "spec/dummy/lib/assets/.keep",
     "spec/dummy/lib/tasks/.keep",
     "spec/dummy/log/.keep",
     "spec/dummy/log/development.log",
+    "spec/dummy/log/test.log",
     "spec/dummy/public/404.html",
     "spec/dummy/public/422.html",
     "spec/dummy/public/500.html",
     "spec/dummy/public/favicon.ico",
     "spec/dummy/public/robots.txt",
+    "spec/factories/gem_display.rb",
+    "spec/models/gem_display_spec.rb",
     "spec/rubygems_herald_spec.rb",
-    "spec/spec_helper.rb"
+    "spec/spec_helper.rb",
+    "spec/support/gem_display_support.rb"
   ]
   s.homepage = "http://github.com/gemvein/rubygems_herald"
   s.licenses = ["MIT"]

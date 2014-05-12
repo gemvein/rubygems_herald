@@ -2,12 +2,12 @@ ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../dummy/config/environment", __FILE__)
 
 require 'coveralls'
-Coveralls.wear!('rails')
+Coveralls.wear!
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'rspec-rails'
 require 'rails/all'
+require 'rspec/rails'
 
 require 'factory_girl_rails'
 FactoryGirl.definition_file_paths = %w(spec/factories)
