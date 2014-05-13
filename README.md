@@ -12,12 +12,12 @@ Installation
 
 First, add the gem to your Gemfile
 
-    gem 'cooperative', :git => 'git://github.com/nerakdon/cooperative.git'
+    gem 'rubygems_herald'
 
 Next, run the following commands
 
     > bundle install
-    > rails g cooperative:install
+    > rails g rubygems_herald:install
     > rake db:migrate
 
 Edit the initializer to set the names of the gems that Rubygems Herald should fetch.
