@@ -1,7 +1,7 @@
 Rubygems Herald
 ===========
 
-[![GitHub version](https://badge.fury.io/gh/gemvein%2Frubygems_herald.svg)](http://badge.fury.io/gh/gemvein%2Frubygems_herald)
+[![Gem Version](https://badge.fury.io/rb/rubygems_herald.svg)](http://badge.fury.io/rb/rubygems_herald)
 [![Build Status](https://travis-ci.org/gemvein/rubygems_herald.svg)](https://travis-ci.org/gemvein/rubygems_herald)
 [![Coverage Status](https://coveralls.io/repos/gemvein/rubygems_herald/badge.png)](https://coveralls.io/r/gemvein/rubygems_herald)
 

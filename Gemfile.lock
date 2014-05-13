@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubygems_herald (0.0.1)
+    rubygems_herald (0.0.2)
       bootstrap_leather
       database_cleaner
       factory_girl_rails
