@@ -22,7 +22,6 @@ Gem::Specification.new do |s|
     ".rspec",
     ".travis.yml",
     "Gemfile",
-    "Gemfile.lock",
     "LICENSE.txt",
     "README.md",
     "Rakefile",
