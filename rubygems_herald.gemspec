@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "rubygems_herald"
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Karen Lundgren"]
-  s.date = "2014-05-12"
+  s.date = "2014-05-13"
   s.description = "For organizations that want to market a gem in style, Rubygems Herald syncs your gems' data via the RubyGems.org API so that your software marketing website stays up to date with the latest information about your gems."
   s.email = "karen.e.lundgren@gmail.com"
   s.extra_rdoc_files = [
@@ -45,6 +45,7 @@ Gem::Specification.new do |s|
     "lib/rubygems_herald/spider.rb",
     "lib/rubygems_herald/version.rb",
     "rubygems_herald.gemspec",
+    "spec/controllers/gem_displays_controller_spec.rb",
     "spec/dummy/.rspec",
     "spec/dummy/Rakefile",
     "spec/dummy/app/controllers/application_controller.rb",
@@ -62,6 +63,7 @@ Gem::Specification.new do |s|
     "spec/dummy/config/environments/production.rb",
     "spec/dummy/config/environments/test.rb",
     "spec/dummy/config/initializers/backtrace_silencers.rb",
+    "spec/dummy/config/initializers/bootstrap_leather.rb",
     "spec/dummy/config/initializers/filter_parameter_logging.rb",
     "spec/dummy/config/initializers/inflections.rb",
     "spec/dummy/config/initializers/mime_types.rb",
@@ -89,7 +91,9 @@ Gem::Specification.new do |s|
     "spec/models/gem_display_spec.rb",
     "spec/rubygems_herald_spec.rb",
     "spec/spec_helper.rb",
-    "spec/support/gem_display_support.rb"
+    "spec/support/gem_display_support.rb",
+    "spec/views/gem_displays/index.html.haml_spec.rb",
+    "spec/views/gem_displays/show.html.haml_spec.rb"
   ]
   s.homepage = "http://github.com/gemvein/rubygems_herald"
   s.licenses = ["MIT"]
