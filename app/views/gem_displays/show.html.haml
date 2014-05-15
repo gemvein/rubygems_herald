@@ -13,18 +13,18 @@
   = '(' + @gem_display.version_downloads.to_s + ' ' + :for_this_version.l + ')'
 
 %h3= :links.l
-= nav_list class: 'nav-pills' do
+.btn-group
   - if @gem_display.project_uri.present?
-    = nav_item :project.l, @gem_display.project_uri
+    .btn.btn-default= link_to :project.l, @gem_display.project_uri
   - if @gem_display.homepage_uri.present?
-    = nav_item :homepage.l, @gem_display.homepage_uri
+    .btn.btn-default= link_to :homepage.l, @gem_display.homepage_uri
   - if @gem_display.wiki_uri.present?
-    = nav_item :wiki.l, @gem_display.wiki_uri
+    .btn.btn-default= link_to :wiki.l, @gem_display.wiki_uri
   - if @gem_display.documentation_uri.present?
-    = nav_item :documentation.l, @gem_display.documentation_uri
+    .btn.btn-default= link_to :documentation.l, @gem_display.documentation_uri
   - if @gem_display.mailing_list_uri.present?
-    = nav_item :mailing_list.l, @gem_display.mailing_list_uri
+    .btn.btn-default= link_to :mailing_list.l, @gem_display.mailing_list_uri
   - if @gem_display.source_code_uri.present?
-    = nav_item :source_code.l, @gem_display.source_code_uri
+    .btn.btn-default= link_to :source_code.l, @gem_display.source_code_uri
   - if @gem_display.bug_tracker_uri.present?
-    = nav_item :bug_tracker.l, @gem_display.bug_tracker_uri
+    .btn.btn-default= link_to :bug_tracker.l, @gem_display.bug_tracker_uri

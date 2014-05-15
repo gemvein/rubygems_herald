@@ -46,7 +46,7 @@ class String
     if is_json?
       JSON.parse self
     else
-      raise :invalid_json_response.l
+      raise :invalid_json_response.l + ': ' + self
     end
   end
 end

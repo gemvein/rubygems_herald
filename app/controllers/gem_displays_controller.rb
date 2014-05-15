@@ -32,7 +32,7 @@ class GemDisplaysController < ApplicationController
   end
 
   def load_gem_display
-    @gem_display = GemDisplay.find_by_name(params[:id]) or not_found
+    @gem_display = GemDisplay.find_or_create_by(name: params[:id]) or not_found
   end
 
 end
