@@ -1,0 +1,4 @@
+%h3= :top_gem_displays.l
+%ul.list-group
+  - for gem_display in GemDisplay.order(version_downloads: :desc)
+    %li.list-group-item= badge_to gem_display.name, 'v ' + gem_display.version, gem_display
