@@ -44,4 +44,8 @@ class GemDisplay < ActiveRecord::Base
   def to_param
     name
   end
+
+  def title
+    name.tr!('_', ' ').titleize
+  end
 end
