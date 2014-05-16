@@ -46,6 +46,6 @@ class GemDisplay < ActiveRecord::Base
   end
 
   def title
-    name.tr!('_', ' ').titleize
+    name.tr('_', ' ').titleize
   end
 end
