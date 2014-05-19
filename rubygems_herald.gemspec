@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = "rubygems_herald"
-  s.version = "0.0.6"
+  s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Karen Lundgren"]
-  s.date = "2014-05-16"
-  s.description = "For organizations that want to market a gem in style, Rubygems Herald syncs your gems' data via the RubyGems.org API so that your software marketing website stays up to date with the latest information about your gems."
+  s.date = "2014-05-19"
+  s.description = "  gem.summary = %Q{This project has been renamed to Museum. This version has been abandoned and remains here only for historical reasons.}\n"
   s.email = "karen.e.lundgren@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -101,7 +101,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "2.0.3"
-  s.summary = "Rails 4 Engine that populates a marketing site with data from RubyGems.org"
+  s.summary = "This project has been renamed to Museum. This version has been abandoned and remains here only for historical reasons."
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
