@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = "rubygems_herald"
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Karen Lundgren"]
   s.date = "2014-05-19"
-  s.description = "  gem.summary = %Q{This project has been renamed to Museum. This version has been abandoned and remains here only for historical reasons.}\n"
+  s.description = "This project has been renamed to Museum. This version has been abandoned and remains here only for historical reasons."
   s.email = "karen.e.lundgren@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
