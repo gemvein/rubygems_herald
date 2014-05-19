@@ -18,8 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/gemvein/rubygems_herald"
   gem.license = "MIT"
   gem.summary = %Q{This project has been renamed to Museum. This version has been abandoned and remains here only for historical reasons.}
-  gem.description = %Q{  gem.summary = %Q{This project has been renamed to Museum. This version has been abandoned and remains here only for historical reasons.}
-}
+  gem.description = %Q{This project has been renamed to Museum. This version has been abandoned and remains here only for historical reasons.}
   gem.email = "karen.e.lundgren@gmail.com"
   gem.authors = ["Karen Lundgren"]
   # dependencies defined in Gemfile
